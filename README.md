@@ -3,7 +3,9 @@
 ### what I learned 
 
 - Authentication
+- Routing in Angular
 - Protected Routes in Angular
+- Auth guard 
 - Nested Routing in Angular
 - Cors in detail
 - Cookies
