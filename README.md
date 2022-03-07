@@ -6,6 +6,7 @@
 - Routing in Angular
 - Protected Routes in Angular
 - Auth guard 
+- Using Auth guard with cookies
 - Nested Routing in Angular
 - Cors in detail
 - Cookies
