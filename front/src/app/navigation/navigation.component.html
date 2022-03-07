@@ -1,0 +1,12 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light nav-back fixed-top">
+    <div class="navbar-nav">
+       <a class="nav-item nav-link " routerLink="Add">Add Task </a>
+       <a class="nav-item nav-link" routerLink="Tasks">View</a>
+       <span [ngStyle]="{'position': 'absolute','right': '0'}">
+       <button [ngStyle]="{'border':'0'}" class="nav-item nav-link bg-light"(click)="logout()">Logout </button>
+       </span>
+     </div>
+    
+ </nav >
+ <div [ngStyle]="{'margin':'80px'}" >
+  <router-outlet></router-outlet>

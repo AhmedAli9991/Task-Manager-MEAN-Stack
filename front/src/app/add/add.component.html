@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-5">
+            <div class="card shadow-lg border-0 rounded-lg mt-5">
+                <div class="card-header"><h3 class="text-center font-weight-light my-4">Add Task</h3></div>
+                <div class="card-body">
+                <form (ngSubmit)="onSubmit()" > 
+                        <div class="form-floating mb-3">
+                            <input class="form-control" placeholder="Title" value={{Title}} [(ngModel)]="Title" [ngModelOptions]="{standalone: true}"/>
+                            <label class="form-label">Title</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control bg-textarea"  rows="3" placeholder="Description" value={{Desc}} [(ngModel)]="Desc" [ngModelOptions]="{standalone: true}"></textarea>
+                            <label class="form-label">Description</label>
+                        </div>
+                       
+                            <button type='Submit' class="btn btn-primary" >Add Task</button>  
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

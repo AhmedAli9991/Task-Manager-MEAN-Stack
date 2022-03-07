@@ -1,0 +1,22 @@
+<table class="table" id="list">
+    <thead>
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Update</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let Task of list">
+          <td>{{Task.Title}}</td>
+          <td>{{Task.Desc}}</td>
+          <td>
+            <button class="btn btn-primary" (click)="update(Task._id)" >Update</button>  
+            </td>
+            <td>
+            <button class="btn btn-primary" (click)="delete(Task._id)" >Delete</button>  
+            </td>         
+      </tr>
+    </tbody>
+  </table>
